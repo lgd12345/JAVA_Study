@@ -22,12 +22,12 @@ public class Game {
 		
 		int rum = scanner.nextInt();
 		
-		if (rum != 0 || rum != 1 || rum != 2) {
+		if (!(rum == 0 || rum == 1 || rum == 2)) {
 			System.out.println("다시 0,1,2 중 선택하세요!");
 			run();
 			
 		}else{
-			System.out.println("당신의 선택은 : "+ rum );
+			System.out.println("당신의 선택은 : "+ objects[rum].getName());
 			
 			GameObject ob1 = objects[rum]; // 0~2
 			
