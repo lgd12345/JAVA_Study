@@ -45,6 +45,7 @@ public class Game {
 				a = true;
 			} catch (Exception e) {
 				System.out.println("오류");
+				continue;
 				
 			}
 		}while(!a);
