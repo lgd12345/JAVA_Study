@@ -24,12 +24,6 @@ public class Game {
 		
 				
 		System.out.println("당신의 선택은 : "+ ob1.getName());
-	//	int you = 
-	//	if (you == ) {
-	//		
-	//	} else {
-	//		System.out.println("다시 선택하세요");
-	//	}
 		
 		System.out.println("컴퓨터의 선택은 : " + ob2.getName());
 		

@@ -5,7 +5,6 @@ import java.util.Random;
 public class F2_Lotto {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		// 객체 생성
 		LottoMachine machine = new LottoMachine();
 		
