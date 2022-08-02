@@ -1,8 +1,8 @@
-package gameObjects;
+package gameObjects2;
 
-public class Magic extends GameObject {
-	public Magic() {
-		setId(3);
+public class Magic2 extends GameObject2 {
+	public Magic2() {
+		setId(2);
 		setNameO("마법");
 
 		n1.add("마법스킬을 발견하셨습니다.");
