@@ -32,11 +32,15 @@ public class GameO {
 	Scanner scanner4 = new Scanner(System.in);
 
 	Random random = new Random();
+	User user;
+	public GameO(User user) {
+		this.user = user;
+	}
 
 	boolean a = false;
 
 	public void run() {
-		System.out.println("💖나를 잘 키워줘💖");
+		System.out.println("💖 "+user.getName()+"! 나를 잘 키워줘 💖");
 		System.out.println("++++++++++++");
 		System.out.println("+          +");
 		System.out.println("+    🐇    +");
@@ -64,7 +68,7 @@ public class GameO {
 					objects[rum].getN1().forEach(s -> System.out.println(s));
 					System.out.println();
 					System.out.println("토끼가 신나서 폴짝 뛰었어요!");
-					System.out.println("토끼가 물과 음식을 내놓으라 합니다.");
+					System.out.println("토끼가 "+user.getName()+"님에게 물과 음식을 내놓으라 합니다.");
 					System.out.print("물# 음식# [0,1] 선택 해주세요");
 					System.out.println();
 					runWF();
@@ -72,7 +76,7 @@ public class GameO {
 					objects[rum].getN1().forEach(s -> System.out.println(s));
 					System.out.println();
 					System.out.println("토끼가 신나서 폴짝 뛰었어요!");
-					System.out.println("토끼가 물과 음식을 내놓으라 합니다.");
+					System.out.println("토끼가 "+user.getName()+"님에게 물과 음식을 내놓으라 합니다.");
 					System.out.println();
 					System.out.print("물# 음식# [0,1] 선택 해주세요");
 					runWF();
@@ -163,7 +167,7 @@ public class GameO {
 					System.out.println();
 					objects2[rum3].getN1().forEach(s -> System.out.println(s));
 					System.out.println("토끼가 신나서 폴짝 뛰었어요!");
-					System.out.println("토끼가 음식을 내놓으라 합니다.");
+					System.out.println("토끼가 "+user.getName()+"님에게 음식을 내놓으라 합니다.");
 					System.out.println();
 					System.out.print("물# 음식# [0,1] 선택 해주세요");
 					runWF2();
@@ -231,7 +235,6 @@ public class GameO {
 						if (hp == 31) {
 							break;
 						}
-						System.out.println();
 						hp += 5;
 						System.out.println("Hp = " + (hp - 1));
 
@@ -257,7 +260,7 @@ public class GameO {
 		System.out.println("몬스터가 나타났다🐱‍👤!!");
 		System.out.println("[내 이름은 고양이 닌자다냥!]");
 		System.out.println("[배가 고프다냥! 맛있는 걸 내놓아라!]");
-		System.out.println("몬스터와 싸우시겠습니까?[y/n]");
+		System.out.println(user.getName()+"님!! 몬스터와 싸우시겠습니까?[y/n]");
 
 		do {
 			String line4 = scanner4.nextLine();
@@ -308,7 +311,7 @@ public class GameO {
 
 			}
 			firstAttack = !firstAttack;
-		}
+		}//결과
 		if (a.getHp() > 0) {
 			System.out.println(a.getName() + "가 이겼다!!");
 			System.out.println("축하합니다.");

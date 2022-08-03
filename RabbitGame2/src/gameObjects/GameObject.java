@@ -1,13 +1,13 @@
-package gameObjects2;
+package gameObjects;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class GameObject2 {
+public class GameObject {
 	protected int id;
 	protected String nameO;
 	List<String> n1 = new ArrayList<String>();
-	
+
 	public List<String> getN1() {
 		return n1;
 	}
